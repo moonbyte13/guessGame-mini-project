@@ -27,11 +27,15 @@ function keydownAction(event) {
 }
 
 function check() {
-  for (let i = 0; i < randomWord.length; i++) {
-    if (keyPress = randomWord.split[i]) {
-      randomWord.split.textContent[i] = keyPress;
+  let alphabetNumericCharacters = "abcdefghijklmnopqrstuv".split[""];
+  if (alphabetNumericCharacters = keyPress) {
+    for (let i = 0; i < randomWord.length; i++) {
+      if (keyPress = randomWord.split[i]) {
+        randomWord.split.textContent[i] = keyPress;
+      }
     }
   }
+  
 }
 
 let randomWord = 0
