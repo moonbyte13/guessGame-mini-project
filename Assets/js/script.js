@@ -46,7 +46,15 @@ function randomizer() {
 }
 
 function displayWord(aword) {
-  wordDisplay.textContent = aword;
+  lettersInWord = aword.split("");
+  numBlanks = lettersInChosenWord.length;
+  blanksLetters = []
+  // Uses loop to push blanks to blankLetters array
+  for (var i = 0; i < numBlanks; i++) {
+    blanksLetters.push("_");
+  }
+  // Converts blankLetters array into a string and renders it on the screen
+  wordDisplay.textContent = blanksLetters.join(" ")
 }
 
 function countdown() {
